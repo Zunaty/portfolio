@@ -41,11 +41,14 @@ header nav ul {
 header nav ul li a {
     margin: 3px;
     padding: 7px;
-    background-color: skyblue;
+    background-color: rgba(135, 206, 235, 0.7);
     color: #767676;
     border-radius: 10px;
     font-size: 32px;
     box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
+}
+header nav ul li a:hover {
+    background-color: skyblue;
 }
 
 /* Main content styling */
@@ -57,7 +60,7 @@ header nav ul li a {
 .section-title {
     padding: 50px 15px;
     color: skyblue;
-    background: #767676;
+    background: rgba(118, 118, 118, 0.8);
     margin: 50px 0;
     width: 20%;
     font-size: 36px;
@@ -73,14 +76,18 @@ header nav ul li a {
     border-left: 2px solid red;
     border-bottom: 2px solid #767676;
     flex: 1;
+    flex-wrap: nowrap;
 }
 
 
 /* About Me Styling */
 .about-me p {
-    width: auto;
-    margin: 20px 25px;
+    width: 80%;
+    margin: 15px 15px;
     line-height: 1.5;
+}
+.about-me img {
+    width: 20%;
 }
 
 /* Projects Styling */
