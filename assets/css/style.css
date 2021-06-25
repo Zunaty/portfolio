@@ -9,24 +9,24 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Heading styling */
+/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
     align-items: center;
-
     background-color: #767676;
     width: 100%;
+    border-bottom: 2px solid red;
 }
 header h1 {
     color: skyblue;
-    margin: 25px;
+    margin: 0;
+    padding: 25px;
     font-size: 48px;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0,0,0, 0.35);
+    border-right: 5px solid skyblue;
 }
 header a {
     text-decoration: none;
@@ -41,12 +41,75 @@ header nav ul {
 header nav ul li a {
     margin: 3px;
     padding: 7px;
-    background-color: aqua;
+    background-color: skyblue;
+    color: #767676;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 32px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
 }
 
-/* Sidebar styling */
-aside {
+/* Main content styling */
+.main-body *{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+}
+.section-title {
+    padding: 50px 15px;
+    color: skyblue;
     background: #767676;
+    margin: 50px 0;
+    width: 20%;
+    font-size: 36px;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0, 0.35);
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+    border-right: 5px solid skyblue;
+    border-radius: 0 25px 25px 0;
+}
+.content-back {
+    width: auto;
+    margin: 0 0 0 10px;
+    border-left: 2px solid red;
+    border-bottom: 2px solid #767676;
+    flex: 1;
+}
+
+
+/* About Me Styling */
+.about-me p {
+    width: auto;
+    margin: 20px 25px;
+    line-height: 1.5;
+}
+
+/* Projects Styling */
+
+
+/* Contact Me Styling */
+.contact-me p  {
+    width: 60%;
+    margin: 20px 25px;
+}
+.last-content-back {
+    border-bottom: none;
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #767676;
+    width: 100%;
+    border-top: 2px solid red;
+}
+footer h3 {
+    color: skyblue;
+    margin: 0;
+    padding: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+    border-right: 5px solid skyblue;
 }
