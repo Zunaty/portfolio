@@ -51,6 +51,14 @@ header nav ul li a:hover {
     background-color: skyblue;
 }
 
+/* Hero Styling */
+.hero {
+    background-image: url("../images/space.jpg");
+    background-position: center;
+    height: 400px;
+    border-bottom: 2px solid skyblue;
+}
+
 /* Main content styling */
 .main-body *{
     display: flex;
@@ -71,6 +79,9 @@ header nav ul li a:hover {
     border-right: 5px solid skyblue;
     border-radius: 0 25px 25px 0;
 }
+.last-section-title{
+    margin-bottom: 100px;
+}
 .content-back {
     width: auto;
     margin: 10px 0 0 10px;
@@ -79,6 +90,9 @@ header nav ul li a:hover {
     flex: 1;
     flex-flow: wrap;
     justify-content: left space-evenly;
+}
+.last-content-back {
+    border-bottom: none;
 }
 
 /* About Me Styling */
@@ -129,17 +143,17 @@ header nav ul li a:hover {
     border: 2px solid red;
 }
 .projects a:nth-child(2) article {
-    background-image: url("/assets/images/lego.png");
+    background-image: url("../images/lego.png");
     background-size: 300px;
 }
 .projects a:nth-child(3) article {
-    background-image: url("/assets/images/run-buddy.png");
+    background-image: url("../images/run-buddy.png");
     background-size: cover;
 }
 .primary-card article{
     height: 400px;
     width: 610px;
-    background-image: url("/assets/images/current.png");
+    background-image: url("../images/current.png");
     background-size: 610px;
 }
 
@@ -148,7 +162,7 @@ header nav ul li a:hover {
     align-items: center;
 }
 .contact-me a {
-    margin: 3px;
+    margin: 15px 50px;
     padding: 7px;
     background-color: rgba(135, 206, 235, 0.7);
     color: #767676;
@@ -159,9 +173,7 @@ header nav ul li a:hover {
 .contact-me a:hover {
     background-color: skyblue;
 }
-.last-content-back {
-    border-bottom: none;
-}
+
 
 
 /* Footer Styling */
@@ -181,4 +193,32 @@ footer h3 {
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
     border-right: 5px solid skyblue;
+}
+
+/* This is the styling applied for various screen sizes */
+@media screen and (max-width: 1184px) {
+    .about-me p {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .section-title {
+        width: 82%;
+    }
+    .last-section-title {
+        margin-bottom: 15px;
+    }
+    .content-back {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 722px) {
+    header nav ul li a {
+        font-size: 16px;
+    }
 }
