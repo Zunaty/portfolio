@@ -81,7 +81,6 @@ header nav ul li a:hover {
     justify-content: left space-evenly;
 }
 
-
 /* About Me Styling */
 .about-me img {
     max-height: 400px;
@@ -98,10 +97,23 @@ header nav ul li a:hover {
     border: 2px solid skyblue;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+    background: rgba(118, 118, 118, 0.8);
+    color: white;
 }
 
-
 /* Projects Styling */
+.projects a {
+    text-decoration: none;
+}
+.projects h3 {
+    background-color: rgba(135, 206, 235, 0.7);
+    color: #767676;
+    border-radius: 5px 15px 5px 15px;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
+    margin: auto 0 15px 0;
+    padding: 5px;
+}
 .projects article {
     height: 400px;
     width: 300px;
@@ -111,20 +123,46 @@ header nav ul li a:hover {
     border-radius: 15px;
     flex-wrap: wrap;
     box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+    background: rgba(118, 118, 118, 0.8);
 }
-.projects article:first-child {
+.projects article:hover {
+    border: 2px solid red;
+}
+.projects a:nth-child(2) article {
+    background-image: url("/assets/images/lego.png");
+    background-size: 300px;
+}
+.projects a:nth-child(3) article {
+    background-image: url("/assets/images/run-buddy.png");
+    background-size: cover;
+}
+.primary-card article{
     height: 400px;
     width: 610px;
+    background-image: url("/assets/images/current.png");
+    background-size: 610px;
 }
 
 /* Contact Me Styling */
-.contact-me p  {
-    width: 60%;
-    margin: 20px 25px;
+.contact-me ul {
+    align-items: center;
+}
+.contact-me a {
+    margin: 3px;
+    padding: 7px;
+    background-color: rgba(135, 206, 235, 0.7);
+    color: #767676;
+    border-radius: 10px;
+    font-size: 32px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
+}
+.contact-me a:hover {
+    background-color: skyblue;
 }
 .last-content-back {
     border-bottom: none;
 }
+
 
 /* Footer Styling */
 footer {
