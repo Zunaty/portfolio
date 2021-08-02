@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <title>Victor L Perez Portfolio</title>
@@ -13,103 +14,184 @@
 
     <!-- Page title and navigation -->
     <header>
-        <h1 id="home">Victor L Perez</h1>
+        <section class="hero is-dark is-medium">
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
+            <!-- Hero navigation at top -->
+            <div class="hero-head">
+                <nav class="navbar is-transparent" role="navigation" aria-label="main-navigation">
+                    <div class="navbar-brand">
+                        <h4 class="title is-4" id="home">My Portfolio</h4>
+        
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="myMenu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+        
+                    <!-- Nav links -->
+                    <div class="navbar-menu" id="myMenu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="#about-me">About Me</a>
+                            <a class="navbar-item" href="#projects">Projects</a>
+                            <a class="navbar-item" href="#contact-me">Contact Me</a>  
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- My name at the center of the hero area -->
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <p class="title is-1">Victor L Perez</p>
+                    <p class="subtitle">Web Dev & QA Engineer</p>
+                </div>
+            </div>
+
+            <!-- Links to other content -->
+            <div class="hero-foot">
+                <nav class="tabs is-boxed">
+                  <div class="container">
+                    <ul>
+                      <li><a href="https://www.linkedin.com/in/victorlperez/">LinkedIn</a></li>
+                      <li><a href="https://github.com/Zunaty">GitHub</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+        </section>
     </header>
 
-    <!-- Banner Image -->
-    <section class="hero"></section>
+    <section class="section" id="about-me">
+        <!-- First row of boxes -->
+        <div class="tile is-ancestor">
 
-    <!-- Side and main body of page -->
-    <div class="main-body">
-
-        <!-- About me section -->
-        <section id="about-me" class="about-me">
-            <h2 class="section-title">About Me</h2>
-            <div class="content-back">
-                <img src="./assets/images/self.jpg" alt="me" />
-
-                <!-- This will be temporary until the site is futher developed-->
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident necessitatibus 
-                    nobis incidunt ipsa eligendi voluptates quia alias enim, facere debitis aut magni illo 
-                    dolor officiis obcaecati perferendis delectus eaque ab.</br>
-
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod animi maiores sint accusantium neque
-                     hic ipsa eveniet. Vel placeat et harum omnis quia veritatis, quibusdam quisquam iste, saepe illum ad.
-                </p>
+            <!-- The about me info -->
+            <div class="tile is-parent is-3">
+                <div class="tile is-child box has-background-grey-lighter">
+                    <figure class="image">
+                        <img class="myPic mx-auto" src="./assets/images/self.jpg">
+                    </figure>
+                </div>
             </div>
-        </section>
 
-        <!-- Project card section -->
-        <section id="projects" class="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="content-back">
-
-                <!-- This card will be larger than the rest
-                every card will also be a link to their github page/code -->
-                <a href="https://zunaty.github.io/portfolio/" class="primary-card">
-                    <article>
-                        <h3>Portfolio Project</h3>
-                    </article>
-                </a>
-
-                <a href="https://github.com/Zunaty/soloLego">
-                    <article>
-                        <h3>Lego Project</h3>
-                    </article>
-                </a>
-
-                <a href="https://zunaty.github.io/run-buddy/">
-                    <article>
-                        <h3>Run Buddy Project</h3>
-                    </article>
-                </a>
-
-                <!-- These are placeholders for now -->
-                <article>
-                    <h3>dfadfadf</h3>
-                </article>
-
-                <article>
-                    <h3>fladkjfladjflak</h3>
-                </article>
+            <div class="tile is-parent is-6">
+                <div class="tile is-child box has-background-grey-lighter">
+                    <h2 class="title">About Me</h2>
+                    <p>
+                        I've done a little bit of everything. I've learned to fly single engine airplanes, done some coding with java, web design with HTML,
+                        and spent a few years doing almost everything in a restaurant. And still learning new things everyday. 
+                        Through DevMountain i've become a QA Software Engineer.
+                    <br/>
+                    <br/>
+                        Things I enjoy to do in my free time include: gaming, golfing, longboarding, hikes, traveling, etc. Over the years I've gotten several high ranks in multiple games, this experience has helped with problem solving, critical thinking, and my ability to learn fairly quickly
+                    </p>
+                </div>
             </div>
-        </section>
 
-        <!-- Contact me section -->
-        <!-- Fairly empty contact section, don't want to add too much personal info
-            this will be re done at a later date -->
-        <section id="contact-me" class="contact-me">
-            <h2 class="section-title last-section-title">Contact Me</h2>
-            <div class="content-back last-content-back">
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/victorlperez/">LinkedIn</a>
-                    </li>
-                    <li>   
-                        <a href="https://github.com/Zunaty">GitHub</a>
-                    </li>
-                </ul>
+            <!-- This holds the skills I have -->
+            <div class="tile is-parent">
+                <div class="tile is-child box has-background-grey-lighter">
+                    <h2 class="title">Skills</h2>
+                    <div class="content">
+                        <ul>
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>CSS Frameworks</li>
+                            <li>API Manipulation</li>
+                            <li>Manual Testing (QA)</li>
+                            <li>Automated Testing (QA)</li>
+                            <li>Nightwatch.js</li>
+                            <li>Photoshop</li>
+                            <li>Private Pilot (VFR)</li>
+                            <li>Instrument Pilot (IFR)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <footer>
-        <h3>&copy; Victor L Perez Projects</h5>
+    <section class="section" id="projects">
+
+        <!-- Second row of boxes -->
+        <div class="tile is-ancestor">
+
+            <!-- This will hold the showcase project -->
+            <div class="tile is-parent is-6">
+                <div class="tile is-child box has-background-grey-lighter mainCard">
+                    <h3 class="title">Air-Quality</h3>
+                    <h4 class="subtitle">Web Dev Project</h4>
+                    
+                    <a href="https://zunaty.github.io/air-quality/">Check me out!</a>
+                    <a href="https://github.com/Zunaty/air-quality">Github Repo</a>
+                </div>
+            </div>
+
+            <div class="tile is-parent is-3">
+                <div class="tile is-child box has-background-grey-lighter">
+                    <h3 class="title">Weather App</h3>
+                    <h4 class="subtitle">Web Dev Project</h4>
+
+                </div>
+            </div>
+
+            <div class="tile is-parent is-3">
+                <div class="tile is-child box has-background-grey-lighter">
+                    <h3 class="title">Workday Planner</h3>
+                    <h4 class="subtitle">Web Dev Project</h4>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-3">
+                <div class="tile is-child box has-background-grey-lighter">
+                    <h3 class="title">Pass-Gen</h3>
+                    <h4 class="subtitle">Web Dev Project</h4>
+
+                </div>
+            </div>
+
+            <div class="tile is-parent is-3">
+                <div class="tile is-child box has-background-grey-lighter">
+                    <h3 class="title">Lego QA Check </h3>
+                    <h4 class="subtitle">QA Project</h4>
+
+                </div>
+            </div>
+
+            <div class="tile is-parent is-3">
+                <div class="tile is-child box has-background-grey-lighter">
+                    <h3 class="title">Horiseon</h3>
+                    <h4 class="subtitle">Web Dev Project</h4>
+
+                </div>
+            </div>
+
+            <div class="tile is-parent is-3">
+                <div class="tile is-child box has-background-grey-lighter">
+                    <h3 class="title">Temp</h3>
+                    <h4 class="subtitle"></h4>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me section -->
+    <!-- Fairly empty contact section, don't want to add too much personal info
+        this will be re done at a later date -->
+    <section id="contact-me">
+        
+    </section>
+
+    <footer class="footer has-text-centered">
+        <strong>&copy; Victor L Perez Projects</strong>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
