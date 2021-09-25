@@ -5,11 +5,15 @@
 
 .myPic {
     /* background-image: url("../images/self.jpg"); */
+    border: 2px;
+    border-color: black;
+    border-style: solid;
     max-width: 240px;
     max-height: 400px;
     border-radius: 10px;
 }
 
-.mainCard {
-    
+.btnDown {
+    position: absolute;
+    bottom: 30px;
 }
